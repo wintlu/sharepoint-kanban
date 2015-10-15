@@ -1,32 +1,51 @@
+import {Store, toImmutable} from 'nuclear-js';
+import {PROCEED_TASK, 
+	ADD_TASK, 
+	LOAD_TASKS_START, 
+	LOAD_TASKS_SUCCESS, 
+	LOAD_TASKS_FAILED
+} from './actionTypes';
 
-export class TaskStore {
-  constructor() {
-  }
+export default Store({
+	getInitialState(){
+		return toImmutable([]);
+	},
 
-  getTasks(cb){
-  	setTimeout(function () {
-  		var data = [{
-		  		id: 1, assignedTo: 'wint.lu', title: 'task1',status: 'Not Started', labels: ['SharePoint', 'SAP']
-		  	},{
-		  		id: 2, assignedTo: 'wint.lu', title: 'task2',status: 'Not Started', labels: ['SAP']
-		  	},{
-		  		id: 3, assignedTo: 'devin.zeng', title: 'task3',status: 'In Progress', labels: ['Portal','SharePoint']
-		  	},{
-		  		id: 4, assignedTo: 'wenli.fang', title: 'task4',status: 'Completed', labels: []
-		  	}];
-  		cb(data);
-  	}, 100);
-  }
+	initialize(){
+		this.on(PROCEED_TASK, proceedTask);
+		this.on(ADD_TASK, addTask);
+		this.on(LOAD_TASKS_START, (tasks)=>tasks);
+		this.on(LOAD_TASKS_SUCCESS, (tasks, payload)=> toImmutable(payload));
+		this.on(LOAD_TASKS_FAILED, (tasks, payload)=> tasks);
+	}
+});
 
-  getLabels(tasks){
-  	var labels = {};
-  	tasks.forEach(t => { t.labels.forEach(l=>{labels[l]=l;})});
-  	return Object.keys(labels).map(l=> {return {value: l, label: l}});
-  }
+function addTask(tasks, payload){
+	return tasks.push(toImmutable(payload));
+}
 
-  getAssignees(tasks){
-  	var assignees = {};
-  	tasks.forEach(t => {assignees[t.assignedTo] = t.assignedTo});
-  	return Object.keys(assignees).map(l=> { return {value: l, label: l}});
-  }
+function proceedTask (tasks, taskId) {
+	var index = findTaskIndexById(tasks, taskId);
+	var currentStatus = tasks.getIn([index, 'status']);
+	var nextStatus = getNextTaskStatus(currentStatus);
+	return tasks.setIn([index, 'status'], nextStatus);
+}
+
+
+function findTaskIndexById(tasks, taskId){
+	return tasks.findIndex(t=> t.get('id') === taskId);
+}
+
+function getNextTaskStatus (status) {
+	var mapping = ['Not Started', 'In Progress', 'Completed', 'Backup'];
+	var index = mapping.indexOf(status);
+	return mapping[index+1];
+}
+
+
+function receiveProducts(state, { products }) {
+  let newProducts = toImmutable(products)
+    .toMap()
+    .mapKeys((k, v) => v.get('id'))
+  return state.merge(newProducts)
 }

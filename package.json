@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "nuclear-js": "^1.1.1",
     "react": "^0.14.0",
     "react-dom": "^0.14.0",
     "react-select": "^0.7.0"

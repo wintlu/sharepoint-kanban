@@ -1,5 +1,7 @@
 import React from 'react';
 import Select from 'react-select';
+import actions from '../actions';
+
 require('react-select/dist/default.css');
 
 export class Toolbar extends React.Component {
@@ -9,6 +11,7 @@ export class Toolbar extends React.Component {
     this.searchChange = this.searchChange.bind(this);
     this.assigneeFilterChange= this.assigneeFilterChange.bind(this);
     this.labelFilterChange = this.labelFilterChange.bind(this);
+    this.refreshClick = this.refreshClick.bind(this);
   }
 
   render() {
@@ -17,42 +20,42 @@ export class Toolbar extends React.Component {
     	width: '20%'
     };
 
+    var filters = this.props.filterOptions.toJS();
+
     return (
       <div>
       	<div>
       		<div className="clearfix">
       			<div style={selectStyle}>
-      				<Select delimiter=";#" value={this.props.labelsValue} placeholder="Filter by label" style={selectStyle} options={this.props.labelOptions} multi={true} onChange={this.labelFilterChange}/>
+      				<Select delimiter=";#" value={filters.labelsFilter} placeholder="Filter by label" style={selectStyle} options={filters.labelFilterOptions} multi={true} onChange={this.labelFilterChange}/>
       			</div>
       			<div style={selectStyle}>
-      				<Select  delimiter=";#" value={this.props.assigneeValue} placeholder="Filter by assignee" options={this.props.assigneeOptions} onChange={this.assigneeFilterChange}/>
+      				<Select  delimiter=";#" value={filters.assigneeFilter} placeholder="Filter by assignee" options={filters.assigneeFilterOptions}  onChange={this.assigneeFilterChange}/>
       			</div>
       			<div style={selectStyle}>
       				<input placeholder="Search by task title" onChange={this.searchChange}/>
       			</div>
+            <button onClick={this.refreshClick}>Refresh</button>
       		</div>
       	</div>
       </div>
     );
   }
 
+  refreshClick(){
+    actions.loadTasks();
+  }
+
   searchChange(event){
-  	var search = event.target.value.toLowerCase();
-  	// location.hash = '#search=' + search;
-  	if(this.props.searchChange){
-		this.props.searchChange(search);
-	}
+  	var query = event.target.value.toLowerCase();
+    actions.searchChange(query);
   }
 
-  assigneeFilterChange(arg){
-  	if(this.props.assigneeFilterChange){
-  		this.props.assigneeFilterChange(arg);
-  	}
+  assigneeFilterChange(value){
+  	actions.assigneeFilterChange(value);
   }
 
-  labelFilterChange(arg){
-  	if(this.props.labelFilterChange){
-  		this.props.labelFilterChange(arg);
-  	}
+  labelFilterChange(value){
+  	actions.labelFilterChange(value);
   }
 }
