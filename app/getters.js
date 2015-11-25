@@ -1,17 +1,35 @@
-const allTasks = [
-    ['tasks'], (tasks) => {
+export const taskItems = [
+    ['tasks','items'], (tasks) => {
         return tasks;
     }
 ];
 
-const filters = [
+export const filters = [
 	['filters'], (filters)=>{
 		return filters;
 	}
 ];
 
-const filteredTasks = [
-    ['tasks'],
+export const users = [
+    ['users'], users=>users
+];
+
+export const messages = [['messages'], (msgs) => msgs];
+
+export const loading = [
+    ['tasks', 'loading'], (loading) => loading
+];
+
+export const adding = [
+    ['tasks', 'adding'], (adding) => adding
+];
+
+export const addTaskFormOpen = [
+    ['tasks', 'addTaskFormOpen'], (open) => open
+];
+
+export const filteredTasks = [
+    ['tasks','items'],
     ['filters'], (tasks, filters) => {
         function filterByAssignee(tasks, assignee) {
         	if(!assignee){
@@ -46,7 +64,3 @@ const filteredTasks = [
         return tasks2;
     }
 ]
-
-export default {
-    allTasks, filteredTasks, filters
-}

@@ -1,59 +1,96 @@
 import React from 'react';
 import {TaskItem} from './TaskItem'
-import {NewTaskForm} from './NewTaskForm';
+// import {NewTaskForm} from './NewTaskForm';
+import {TextButton} from './TextButton';
+import {AddTaskForm} from './AddTaskItem';
 import reactor from '../reactor'
+import styles from '../styles';
+import actions from '../actions';
 
 export class TaskList extends React.Component {
   constructor(props) {
     super(props);
-
-    this.state = {
-      tasks: [],
-      addingNewTask: false
-    };
-
-    reactor.observe(['tasks'], (_tasks) => this.setState({tasks: _tasks}));
-    this.addNewTaskClick = this.addNewTaskClick.bind(this);
-    this.closeNewTaskForm = this.closeNewTaskForm.bind(this);
-  }
-
-  isNotStartedList(){
-      return this.props.title === 'Not Started';
   }
 
   render() {
-  	var styles = {backgroundColor: this.bgColor(this.props.title)};
+    var listStyle = styles[this.props.title];
+
+    var titleStyle = {
+      color: listStyle.listTitle,
+      fontSize: 20,
+      lineHeight: '50px'
+    };
+    var self = this;
 
     return (
-      <div style={styles}>
-        <div>
-          <h3>{this.props.title}</h3>
-          {this.isNotStartedList()? <button onClick={this.addNewTaskClick}>New Task</button> : null}
+      <div style={this.getStyle()}>
+        <div className="clearfix">
+          <div style={titleStyle}>{this.props.title} 
+          {this.props.isNotStartedList ? <AddTaskFormButton adding={this.props.adding}/> : null}</div>
         </div>
-        {this.state.addingNewTask ? <NewTaskForm onCancel={this.closeNewTaskForm} onSave={this.closeNewTaskForm}/> : null}
       	<div>
           {this.props.tasks.map(t=>{
-            return <TaskItem key={t.get('id')} task={t}/>
+            return <TaskItem color={styles[this.props.title].listTitle} backgroundColor={this.getItemBackgroundColor()} key={t.get('id')} task={t}/>
           })}
       	</div>
       </div>
     );
   }
 
-  addNewTaskClick(){
-    this.setState({addingNewTask: true});
+  addTaskFormOpen (){
+    return this.props.tasks.get('addTaskFormOpen');
   }
 
-  closeNewTaskForm(){
-    this.setState({addingNewTask: false});
+  getItemBackgroundColor(){
+    return styles[this.props.title].item
   }
 
-  bgColor(title){
-  	var color={
-  		'Not Started':'#ddd',
-  		'In Progress':'#eee',
-  		'Completed':'#eef'
-  	}
-  	return color[title];
+  getStyle(){
+    return {
+      backgroundColor: styles[this.props.title].list,
+      padding: 5
+    }
+  }
+}
+
+class AddTaskFormButton extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render(){
+    return this.props.adding === null ? this.renderAdd() : (
+            this.props.adding.get('error') ? this.renderError() : this.renderAdding());
+  }
+
+  btnStyle(){
+    return {
+      float: 'right',
+      marginRight: 20
+    };
+  }
+
+  renderAdding(){
+    return <TextButton
+            disabled={true}
+            style={this.btnStyle()} 
+            color={this.props.color} 
+            text='Adding...'/>
+  }
+
+  renderError(){
+    return <TextButton
+            style={this.btnStyle()}
+            color={'red'} 
+            text='Error!'
+            onClick={actions.toggleAddTaskForm}/>
+  }
+
+  renderAdd(){
+    return <TextButton
+            style={this.btnStyle()} 
+            color={this.props.color} 
+            text='Add'
+            onClick={actions.toggleAddTaskForm}/>
   }
 }

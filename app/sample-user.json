@@ -1,0 +1,28 @@
+{
+    "d": {
+        "__metadata": {
+            "id": "Web/GetUserById(384)",
+            "uri": "http://sp2013portal.delta-corp.com/bu/dpc/admin/ITPortal/Application/_api/Web/GetUserById(384)",
+            "type": "SP.User"
+        },
+        "Groups": {
+            "__deferred": {
+                "uri": "http://sp2013portal.delta-corp.com/bu/dpc/admin/ITPortal/Application/_api/Web/GetUserById(384)/Groups"
+            }
+        },
+        "Id": 384,
+        "IsHiddenInUI": false,
+        "LoginName": "i:0#.w|delta\\devin.zeng",
+        "Title": "Devin Zeng",
+        "PrincipalType": 1,
+        "Email": "Devin.Zeng@delta-corp.com",
+        "IsSiteAdmin": false,
+        "UserId": {
+            "__metadata": {
+                "type": "SP.UserIdInfo"
+            },
+            "NameId": "s-1-5-21-706670597-753717926-1206375605-105233",
+            "NameIdIssuer": "urn:office:idp:activedirectory"
+        }
+    }
+}

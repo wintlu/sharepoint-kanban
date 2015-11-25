@@ -1,0 +1,370 @@
+{
+    "d": {
+        "results": [{
+            "__metadata": {
+                "id": "Web/Lists(guid'9ada220e-280a-4b8f-b6c1-b5c2edf14ed3')/Items(1)",
+                "uri": "http://sp2013portal.delta-corp.com/bu/dpc/admin/ITPortal/Application/_api/Web/Lists(guid'9ada220e-280a-4b8f-b6c1-b5c2edf14ed3')/Items(1)",
+                "etag": "\"6\"",
+                "type": "SP.Data.Work_x0020_TasksListItem"
+            },
+            "FirstUniqueAncestorSecurableObject": {
+                "__deferred": {
+                    "uri": "http://sp2013portal.delta-corp.com/bu/dpc/admin/ITPortal/Application/_api/Web/Lists(guid'9ada220e-280a-4b8f-b6c1-b5c2edf14ed3')/Items(1)/FirstUniqueAncestorSecurableObject"
+                }
+            },
+            "RoleAssignments": {
+                "__deferred": {
+                    "uri": "http://sp2013portal.delta-corp.com/bu/dpc/admin/ITPortal/Application/_api/Web/Lists(guid'9ada220e-280a-4b8f-b6c1-b5c2edf14ed3')/Items(1)/RoleAssignments"
+                }
+            },
+            "AttachmentFiles": {
+                "__deferred": {
+                    "uri": "http://sp2013portal.delta-corp.com/bu/dpc/admin/ITPortal/Application/_api/Web/Lists(guid'9ada220e-280a-4b8f-b6c1-b5c2edf14ed3')/Items(1)/AttachmentFiles"
+                }
+            },
+            "ContentType": {
+                "__deferred": {
+                    "uri": "http://sp2013portal.delta-corp.com/bu/dpc/admin/ITPortal/Application/_api/Web/Lists(guid'9ada220e-280a-4b8f-b6c1-b5c2edf14ed3')/Items(1)/ContentType"
+                }
+            },
+            "FieldValuesAsHtml": {
+                "__deferred": {
+                    "uri": "http://sp2013portal.delta-corp.com/bu/dpc/admin/ITPortal/Application/_api/Web/Lists(guid'9ada220e-280a-4b8f-b6c1-b5c2edf14ed3')/Items(1)/FieldValuesAsHtml"
+                }
+            },
+            "FieldValuesAsText": {
+                "__deferred": {
+                    "uri": "http://sp2013portal.delta-corp.com/bu/dpc/admin/ITPortal/Application/_api/Web/Lists(guid'9ada220e-280a-4b8f-b6c1-b5c2edf14ed3')/Items(1)/FieldValuesAsText"
+                }
+            },
+            "FieldValuesForEdit": {
+                "__deferred": {
+                    "uri": "http://sp2013portal.delta-corp.com/bu/dpc/admin/ITPortal/Application/_api/Web/Lists(guid'9ada220e-280a-4b8f-b6c1-b5c2edf14ed3')/Items(1)/FieldValuesForEdit"
+                }
+            },
+            "File": {
+                "__deferred": {
+                    "uri": "http://sp2013portal.delta-corp.com/bu/dpc/admin/ITPortal/Application/_api/Web/Lists(guid'9ada220e-280a-4b8f-b6c1-b5c2edf14ed3')/Items(1)/File"
+                }
+            },
+            "Folder": {
+                "__deferred": {
+                    "uri": "http://sp2013portal.delta-corp.com/bu/dpc/admin/ITPortal/Application/_api/Web/Lists(guid'9ada220e-280a-4b8f-b6c1-b5c2edf14ed3')/Items(1)/Folder"
+                }
+            },
+            "ParentList": {
+                "__deferred": {
+                    "uri": "http://sp2013portal.delta-corp.com/bu/dpc/admin/ITPortal/Application/_api/Web/Lists(guid'9ada220e-280a-4b8f-b6c1-b5c2edf14ed3')/Items(1)/ParentList"
+                }
+            },
+            "FileSystemObjectType": 0,
+            "Id": 1,
+            "ContentTypeId": "0x010800CEB38A79B3817E4FB22571E7108C50D2",
+            "Title": "completedtask1",
+            "PredecessorsId": {
+                "__metadata": {
+                    "type": "Collection(Edm.Int32)"
+                },
+                "results": []
+            },
+            "Priority": "(2) Normal",
+            "Status": "In Progress",
+            "PercentComplete": 0.5,
+            "AssignedToId": {
+                "__metadata": {
+                    "type": "Collection(Edm.Int32)"
+                },
+                "results": [955, 384]
+            },
+            "Body": "<p>\u200bthis task is completed</p><a target=\"_blank\" href=\"www.qq.com\">QQ</a>",
+            "StartDate": null,
+            "DueDate": null,
+            "Checkmark": "0",
+            "RelatedItems": null,
+            "Labels": {
+                "__metadata": {
+                    "type": "Collection(Edm.String)"
+                },
+                "results": ["SharePoint", "SAP"]
+            },
+            "ID": 1,
+            "Modified": "2015-10-28T23:05:59Z",
+            "Created": "2015-10-12T21:20:57Z",
+            "AuthorId": 955,
+            "EditorId": 955,
+            "OData__UIVersionString": "1.0",
+            "Attachments": false,
+            "GUID": "0c1cd3ab-51c2-4a58-8e37-2384d770392a"
+        }, {
+            "__metadata": {
+                "id": "Web/Lists(guid'9ada220e-280a-4b8f-b6c1-b5c2edf14ed3')/Items(2)",
+                "uri": "http://sp2013portal.delta-corp.com/bu/dpc/admin/ITPortal/Application/_api/Web/Lists(guid'9ada220e-280a-4b8f-b6c1-b5c2edf14ed3')/Items(2)",
+                "etag": "\"4\"",
+                "type": "SP.Data.Work_x0020_TasksListItem"
+            },
+            "FirstUniqueAncestorSecurableObject": {
+                "__deferred": {
+                    "uri": "http://sp2013portal.delta-corp.com/bu/dpc/admin/ITPortal/Application/_api/Web/Lists(guid'9ada220e-280a-4b8f-b6c1-b5c2edf14ed3')/Items(2)/FirstUniqueAncestorSecurableObject"
+                }
+            },
+            "RoleAssignments": {
+                "__deferred": {
+                    "uri": "http://sp2013portal.delta-corp.com/bu/dpc/admin/ITPortal/Application/_api/Web/Lists(guid'9ada220e-280a-4b8f-b6c1-b5c2edf14ed3')/Items(2)/RoleAssignments"
+                }
+            },
+            "AttachmentFiles": {
+                "__deferred": {
+                    "uri": "http://sp2013portal.delta-corp.com/bu/dpc/admin/ITPortal/Application/_api/Web/Lists(guid'9ada220e-280a-4b8f-b6c1-b5c2edf14ed3')/Items(2)/AttachmentFiles"
+                }
+            },
+            "ContentType": {
+                "__deferred": {
+                    "uri": "http://sp2013portal.delta-corp.com/bu/dpc/admin/ITPortal/Application/_api/Web/Lists(guid'9ada220e-280a-4b8f-b6c1-b5c2edf14ed3')/Items(2)/ContentType"
+                }
+            },
+            "FieldValuesAsHtml": {
+                "__deferred": {
+                    "uri": "http://sp2013portal.delta-corp.com/bu/dpc/admin/ITPortal/Application/_api/Web/Lists(guid'9ada220e-280a-4b8f-b6c1-b5c2edf14ed3')/Items(2)/FieldValuesAsHtml"
+                }
+            },
+            "FieldValuesAsText": {
+                "__deferred": {
+                    "uri": "http://sp2013portal.delta-corp.com/bu/dpc/admin/ITPortal/Application/_api/Web/Lists(guid'9ada220e-280a-4b8f-b6c1-b5c2edf14ed3')/Items(2)/FieldValuesAsText"
+                }
+            },
+            "FieldValuesForEdit": {
+                "__deferred": {
+                    "uri": "http://sp2013portal.delta-corp.com/bu/dpc/admin/ITPortal/Application/_api/Web/Lists(guid'9ada220e-280a-4b8f-b6c1-b5c2edf14ed3')/Items(2)/FieldValuesForEdit"
+                }
+            },
+            "File": {
+                "__deferred": {
+                    "uri": "http://sp2013portal.delta-corp.com/bu/dpc/admin/ITPortal/Application/_api/Web/Lists(guid'9ada220e-280a-4b8f-b6c1-b5c2edf14ed3')/Items(2)/File"
+                }
+            },
+            "Folder": {
+                "__deferred": {
+                    "uri": "http://sp2013portal.delta-corp.com/bu/dpc/admin/ITPortal/Application/_api/Web/Lists(guid'9ada220e-280a-4b8f-b6c1-b5c2edf14ed3')/Items(2)/Folder"
+                }
+            },
+            "ParentList": {
+                "__deferred": {
+                    "uri": "http://sp2013portal.delta-corp.com/bu/dpc/admin/ITPortal/Application/_api/Web/Lists(guid'9ada220e-280a-4b8f-b6c1-b5c2edf14ed3')/Items(2)/ParentList"
+                }
+            },
+            "FileSystemObjectType": 0,
+            "Id": 2,
+            "ContentTypeId": "0x010800CEB38A79B3817E4FB22571E7108C50D2",
+            "Title": "in progress2",
+            "PredecessorsId": {
+                "__metadata": {
+                    "type": "Collection(Edm.Int32)"
+                },
+                "results": []
+            },
+            "Priority": "(2) Normal",
+            "Status": "In Progress",
+            "PercentComplete": 0.5,
+            "AssignedToId": null,
+            "Body": "<p>\u200bThis task in in progresss</p>",
+            "StartDate": null,
+            "DueDate": null,
+            "Checkmark": "0",
+            "RelatedItems": null,
+            "Labels": {
+                "__metadata": {
+                    "type": "Collection(Edm.String)"
+                },
+                "results": ["SharePoint"]
+            },
+            "ID": 2,
+            "Modified": "2015-10-28T23:06:20Z",
+            "Created": "2015-10-12T21:21:06Z",
+            "AuthorId": 955,
+            "EditorId": 955,
+            "OData__UIVersionString": "1.0",
+            "Attachments": false,
+            "GUID": "bffc6517-544c-4963-aef9-2b2b6a3e3e5a"
+        }, {
+            "__metadata": {
+                "id": "Web/Lists(guid'9ada220e-280a-4b8f-b6c1-b5c2edf14ed3')/Items(3)",
+                "uri": "http://sp2013portal.delta-corp.com/bu/dpc/admin/ITPortal/Application/_api/Web/Lists(guid'9ada220e-280a-4b8f-b6c1-b5c2edf14ed3')/Items(3)",
+                "etag": "\"11\"",
+                "type": "SP.Data.Work_x0020_TasksListItem"
+            },
+            "FirstUniqueAncestorSecurableObject": {
+                "__deferred": {
+                    "uri": "http://sp2013portal.delta-corp.com/bu/dpc/admin/ITPortal/Application/_api/Web/Lists(guid'9ada220e-280a-4b8f-b6c1-b5c2edf14ed3')/Items(3)/FirstUniqueAncestorSecurableObject"
+                }
+            },
+            "RoleAssignments": {
+                "__deferred": {
+                    "uri": "http://sp2013portal.delta-corp.com/bu/dpc/admin/ITPortal/Application/_api/Web/Lists(guid'9ada220e-280a-4b8f-b6c1-b5c2edf14ed3')/Items(3)/RoleAssignments"
+                }
+            },
+            "AttachmentFiles": {
+                "__deferred": {
+                    "uri": "http://sp2013portal.delta-corp.com/bu/dpc/admin/ITPortal/Application/_api/Web/Lists(guid'9ada220e-280a-4b8f-b6c1-b5c2edf14ed3')/Items(3)/AttachmentFiles"
+                }
+            },
+            "ContentType": {
+                "__deferred": {
+                    "uri": "http://sp2013portal.delta-corp.com/bu/dpc/admin/ITPortal/Application/_api/Web/Lists(guid'9ada220e-280a-4b8f-b6c1-b5c2edf14ed3')/Items(3)/ContentType"
+                }
+            },
+            "FieldValuesAsHtml": {
+                "__deferred": {
+                    "uri": "http://sp2013portal.delta-corp.com/bu/dpc/admin/ITPortal/Application/_api/Web/Lists(guid'9ada220e-280a-4b8f-b6c1-b5c2edf14ed3')/Items(3)/FieldValuesAsHtml"
+                }
+            },
+            "FieldValuesAsText": {
+                "__deferred": {
+                    "uri": "http://sp2013portal.delta-corp.com/bu/dpc/admin/ITPortal/Application/_api/Web/Lists(guid'9ada220e-280a-4b8f-b6c1-b5c2edf14ed3')/Items(3)/FieldValuesAsText"
+                }
+            },
+            "FieldValuesForEdit": {
+                "__deferred": {
+                    "uri": "http://sp2013portal.delta-corp.com/bu/dpc/admin/ITPortal/Application/_api/Web/Lists(guid'9ada220e-280a-4b8f-b6c1-b5c2edf14ed3')/Items(3)/FieldValuesForEdit"
+                }
+            },
+            "File": {
+                "__deferred": {
+                    "uri": "http://sp2013portal.delta-corp.com/bu/dpc/admin/ITPortal/Application/_api/Web/Lists(guid'9ada220e-280a-4b8f-b6c1-b5c2edf14ed3')/Items(3)/File"
+                }
+            },
+            "Folder": {
+                "__deferred": {
+                    "uri": "http://sp2013portal.delta-corp.com/bu/dpc/admin/ITPortal/Application/_api/Web/Lists(guid'9ada220e-280a-4b8f-b6c1-b5c2edf14ed3')/Items(3)/Folder"
+                }
+            },
+            "ParentList": {
+                "__deferred": {
+                    "uri": "http://sp2013portal.delta-corp.com/bu/dpc/admin/ITPortal/Application/_api/Web/Lists(guid'9ada220e-280a-4b8f-b6c1-b5c2edf14ed3')/Items(3)/ParentList"
+                }
+            },
+            "FileSystemObjectType": 0,
+            "Id": 3,
+            "ContentTypeId": "0x010800CEB38A79B3817E4FB22571E7108C50D2",
+            "Title": "not started 1",
+            "PredecessorsId": {
+                "__metadata": {
+                    "type": "Collection(Edm.Int32)"
+                },
+                "results": []
+            },
+            "Priority": "(2) Normal",
+            "Status": "Completed",
+            "PercentComplete": 1,
+            "AssignedToId": {
+                "__metadata": {
+                    "type": "Collection(Edm.Int32)"
+                },
+                "results": [384]
+            },
+            "Body": null,
+            "StartDate": null,
+            "DueDate": null,
+            "Checkmark": "1",
+            "RelatedItems": null,
+            "Labels": {
+                "__metadata": {
+                    "type": "Collection(Edm.String)"
+                },
+                "results": ["SharePoint"]
+            },
+            "ID": 3,
+            "Modified": "2015-10-28T23:06:45Z",
+            "Created": "2015-10-12T21:37:55Z",
+            "AuthorId": 955,
+            "EditorId": 955,
+            "OData__UIVersionString": "1.0",
+            "Attachments": false,
+            "GUID": "b37ad61f-e43c-4825-b608-ed3785b8fe34"
+        }, {
+            "__metadata": {
+                "id": "Web/Lists(guid'9ada220e-280a-4b8f-b6c1-b5c2edf14ed3')/Items(4)",
+                "uri": "http://sp2013portal.delta-corp.com/bu/dpc/admin/ITPortal/Application/_api/Web/Lists(guid'9ada220e-280a-4b8f-b6c1-b5c2edf14ed3')/Items(4)",
+                "etag": "\"1\"",
+                "type": "SP.Data.Work_x0020_TasksListItem"
+            },
+            "FirstUniqueAncestorSecurableObject": {
+                "__deferred": {
+                    "uri": "http://sp2013portal.delta-corp.com/bu/dpc/admin/ITPortal/Application/_api/Web/Lists(guid'9ada220e-280a-4b8f-b6c1-b5c2edf14ed3')/Items(4)/FirstUniqueAncestorSecurableObject"
+                }
+            },
+            "RoleAssignments": {
+                "__deferred": {
+                    "uri": "http://sp2013portal.delta-corp.com/bu/dpc/admin/ITPortal/Application/_api/Web/Lists(guid'9ada220e-280a-4b8f-b6c1-b5c2edf14ed3')/Items(4)/RoleAssignments"
+                }
+            },
+            "AttachmentFiles": {
+                "__deferred": {
+                    "uri": "http://sp2013portal.delta-corp.com/bu/dpc/admin/ITPortal/Application/_api/Web/Lists(guid'9ada220e-280a-4b8f-b6c1-b5c2edf14ed3')/Items(4)/AttachmentFiles"
+                }
+            },
+            "ContentType": {
+                "__deferred": {
+                    "uri": "http://sp2013portal.delta-corp.com/bu/dpc/admin/ITPortal/Application/_api/Web/Lists(guid'9ada220e-280a-4b8f-b6c1-b5c2edf14ed3')/Items(4)/ContentType"
+                }
+            },
+            "FieldValuesAsHtml": {
+                "__deferred": {
+                    "uri": "http://sp2013portal.delta-corp.com/bu/dpc/admin/ITPortal/Application/_api/Web/Lists(guid'9ada220e-280a-4b8f-b6c1-b5c2edf14ed3')/Items(4)/FieldValuesAsHtml"
+                }
+            },
+            "FieldValuesAsText": {
+                "__deferred": {
+                    "uri": "http://sp2013portal.delta-corp.com/bu/dpc/admin/ITPortal/Application/_api/Web/Lists(guid'9ada220e-280a-4b8f-b6c1-b5c2edf14ed3')/Items(4)/FieldValuesAsText"
+                }
+            },
+            "FieldValuesForEdit": {
+                "__deferred": {
+                    "uri": "http://sp2013portal.delta-corp.com/bu/dpc/admin/ITPortal/Application/_api/Web/Lists(guid'9ada220e-280a-4b8f-b6c1-b5c2edf14ed3')/Items(4)/FieldValuesForEdit"
+                }
+            },
+            "File": {
+                "__deferred": {
+                    "uri": "http://sp2013portal.delta-corp.com/bu/dpc/admin/ITPortal/Application/_api/Web/Lists(guid'9ada220e-280a-4b8f-b6c1-b5c2edf14ed3')/Items(4)/File"
+                }
+            },
+            "Folder": {
+                "__deferred": {
+                    "uri": "http://sp2013portal.delta-corp.com/bu/dpc/admin/ITPortal/Application/_api/Web/Lists(guid'9ada220e-280a-4b8f-b6c1-b5c2edf14ed3')/Items(4)/Folder"
+                }
+            },
+            "ParentList": {
+                "__deferred": {
+                    "uri": "http://sp2013portal.delta-corp.com/bu/dpc/admin/ITPortal/Application/_api/Web/Lists(guid'9ada220e-280a-4b8f-b6c1-b5c2edf14ed3')/Items(4)/ParentList"
+                }
+            },
+            "FileSystemObjectType": 0,
+            "Id": 4,
+            "ContentTypeId": "0x010800CEB38A79B3817E4FB22571E7108C50D2",
+            "Title": "test not started",
+            "PredecessorsId": {
+                "__metadata": {
+                    "type": "Collection(Edm.Int32)"
+                },
+                "results": []
+            },
+            "Priority": "(2) Normal",
+            "Status": "Not Started",
+            "PercentComplete": 0,
+            "AssignedToId": null,
+            "Body": null,
+            "StartDate": null,
+            "DueDate": null,
+            "Checkmark": "0",
+            "RelatedItems": null,
+            "Labels": null,
+            "ID": 4,
+            "Modified": "2015-10-15T20:47:43Z",
+            "Created": "2015-10-15T20:47:43Z",
+            "AuthorId": 955,
+            "EditorId": 955,
+            "OData__UIVersionString": "1.0",
+            "Attachments": false,
+            "GUID": "1913185a-3198-48dc-94a3-356da6e0e2a8"
+        }]
+    }
+}

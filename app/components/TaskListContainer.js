@@ -11,9 +11,11 @@ export class TaskListContainer extends React.Component{
         };
 
 		return (<div> 
-                    <div>Tasks Count: {this.props.tasks.size}</div>
+                    <div style={this.getStatStyle()}>Total task: {this.props.tasks.size}</div>
+                    <div className="clearfix"/>
                     <div style = {columnStyle} >
-                        <TaskList title="Not Started" tasks={this.filterByStatus(tasks, 'Not Started')} filterOptions={this.props.filterOptions}/ > </div> 
+                        <TaskList title="Not Started" adding={this.props.adding} isNotStartedList={true} tasks={this.filterByStatus(tasks, 'Not Started')} filterOptions={this.props.filterOptions}/ > 
+                    </div> 
                     <div style = {columnStyle} >
                         <TaskList title="In Progress" tasks={this.filterByStatus(tasks, 'In Progress')} filterOptions={this.props.filterOptions}/ > </div> 
                     <div style = {columnStyle} >
@@ -26,5 +28,14 @@ export class TaskListContainer extends React.Component{
 
     filterByStatus(tasks, statusCondition){
         return tasks.filter((t)=>{return t.get('status') === statusCondition});
+    }
+
+    getStatStyle(){
+        return {
+            color: '#ccc',
+            fontSize: 15,
+            float: 'right',
+            lineHeight: '30px'
+        }
     }
 }
