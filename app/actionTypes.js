@@ -1,26 +1,26 @@
-import keyMirror from 'react/node_modules/fbjs/lib/keyMirror';
+// import keyMirror from 'react/node_modules/fbjs/lib/keyMirror';
 
-export default keyMirror({
+export default {
 	//UI actions
-	SEARCH: null,
-	FILTER_ASSIGNEE: null,
-	FILTER_LABELS: null,
-	LOAD_FILTER_OPTIONS: null,
+	SEARCH: 'SEARCH',
+	FILTER_ASSIGNEE: 'FILTER_ASSIGNEE',
+	FILTER_LABELS: 'FILTER_LABELS',
+	LOAD_FILTER_OPTIONS: 'LOAD_FILTER_OPTIONS',
 
-	TOGGLE_ADD_TASK_FORM: null,
+	TOGGLE_ADD_TASK_FORM: 'TOGGLE_ADD_TASK_FORM',
 
 
 	//Tasks data
-	LOAD_TASKS_START: null,
-	LOAD_TASKS_SUCCESS: null,
-	LOAD_TASKS_FAILED: null,
-	
-	PROCEED_TASK: null,
+	LOAD_TASKS_START: 'LOAD_TASKS_START',
+	LOAD_TASKS_SUCCESS: 'LOAD_TASKS_SUCCESS',
+	LOAD_TASKS_FAILED: 'LOAD_TASKS_FAILED',
 
-	ADD_TASK_START: null,
-	ADD_TASK_SUCCESS: null,
-	ADD_TASK_FAILED: null,
+	PROCEED_TASK: 'PROCEED_TASK',
+
+	ADD_TASK_START: 'ADD_TASK_START',
+	ADD_TASK_SUCCESS: 'ADD_TASK_SUCCESS',
+	ADD_TASK_FAILED: 'ADD_TASK_FAILED',
 
 	//Users data
 	LOAD_USER: 'LOAD_USER'
-});
+};

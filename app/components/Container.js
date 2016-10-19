@@ -38,17 +38,17 @@ export var Container = React.createClass({
         }, styles.grid(30));
         return (
         <div>
-            {this.state.addTaskFormOpen ? 
+            {this.state.addTaskFormOpen ?
                 <Dialog title="Add New Task" onCancel={()=>actions.toggleAddTaskForm()}>
                     <NewTaskForm adding={this.state.adding}/>
                 </Dialog>
                 : null
             }
             <div className="clearfix">
-                <div style={titleStyle}>Kanban
-                    <TextButton disabled={this.state.loading ? true: false} 
-                        style={{marginLeft: 20, fontSize: 25}} 
-                        onClick={()=> actions.loadTasks()} 
+                <div style={titleStyle}>Kanban8
+                    <TextButton disabled={this.state.loading ? true: false}
+                        style={{marginLeft: 20, fontSize: 25}}
+                        onClick={()=> actions.loadTasks()}
                         text={this.state.loading ? '...loading': '&#x21ba;'}/>
                 </div>
                 <div style={styles.grid(70)}>
